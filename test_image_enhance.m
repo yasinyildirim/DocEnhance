@@ -1,6 +1,7 @@
 % Demo for document image enhancement (please see README.md first).
 
-img = imread('D:/path/to/your/imagefile');
+samplesPath = strcat(pwd,(filesep), 'samples' , (filesep)  );
+img = imread(strcat(samplesPath, 'sample-6.jpg' ));
 hsv_img = rgb2hsv(img);
 % Extract hsv color channels.
 orig_imH = hsv_img(:,:,1); % Hue channel
